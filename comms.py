@@ -22,7 +22,7 @@ print ("Opening %s" % port)
 with serial.Serial(port, timeout=4, baudrate=4800, bytesize=8, stopbits=1) as ser:
 
     for byte in tqdm(tosend):
-        time.sleep(0.1) # lol
+        time.sleep(0.01) # if you want to see pretty lights of binary increment, then make this 0.1.
         # print("Sending %s" % byte)
         bytes_written = ser.write(byte)
         assert bytes_written == 1, bytes_written

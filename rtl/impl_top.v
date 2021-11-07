@@ -21,7 +21,7 @@ output  wire [7:0]  led
 
 // Clock frequency in hertz.
 parameter CLK_HZ = 50000000;
-parameter BIT_RATE =   9600;
+parameter BIT_RATE =   4800;
 parameter PAYLOAD_BITS = 8;
 
 wire [PAYLOAD_BITS-1:0]  uart_rx_data;
